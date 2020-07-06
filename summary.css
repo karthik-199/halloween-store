@@ -1,0 +1,324 @@
+html {
+	background-image: url("images/bats.gif");	
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	max-width: 960px;
+	width: 95%;                        
+	background-color: white;
+	margin: 0 auto 20px; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+.container{
+	padding: 0px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+
+header {
+    background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    padding: .9375em 1.875% .9375em 1.875%;  
+} 
+header img { 
+	float: left; 
+	padding-right: 1.875%; 
+	width: 10.6%;
+	max-width: 85px;
+	min-width: 40px;
+} 
+header h2 {
+	font-size: 230%;
+	font-weight: 700;
+}
+header h3 {
+	font-size: 125%;
+	padding-bottom: .75em;
+	font-weight: 700;
+}
+
+
+
+#nav-list {
+	clear: left;
+	margin: 0;
+	padding: 0;    
+}
+#nav-list .my_nav {
+	list-style: none;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    background-color: black;
+}
+#nav-list .my_nav .option .navi_index, .navbar_dropdown {
+	text-align: center;
+	display: block;
+	padding: .9em 0;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+#nav-list .my_nav .option {
+	color: orange;
+}
+#nav-list .my_nav .option .navi_index:hover, #nav-list .my_nav .option .navi_index:focus {
+	color: orange;
+	transition: 0.3s;
+}
+.dropdown{
+	position: relative;
+}
+.dropdown-menu{
+	width: 100%;
+	padding: 0px;
+	top: 130%;
+	margin: 0px;
+	display: block;
+	background-color: black;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+	position: absolute;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.navbar_dropdown:focus, .navbar_dropdown:hover{
+	background: gray;
+	color: orange;
+	transition: 0.3s;
+	transition: background-color 0.3s ease;
+}
+.dropdown-menu.show, .dropdown:hover .dropdown-menu, .dropdown:hover .navbar_dropdown{
+    display: block;
+}
+.dropdown-menu.show, .dropdown:hover .dropdown-menu{
+	top:96%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.3s;
+}
+.dropdown-toggle::after{
+	display: none;
+}
+.middle_area{
+	display: flex;
+}
+.middle_left{
+	width: 27%
+}
+.middle_right{
+	width: 73%;
+}
+
+aside {
+    margin: 0;
+    padding: 2em 0;
+}
+aside .side_menu { 
+	list-style: none;
+    margin: 0;
+    padding: 0 12%;
+}
+.option{ 
+	flex: 1;
+}
+
+aside .side_menu .side_link {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+    text-align: left;
+	background-color: orange;
+	padding: .5em .7em;
+	margin: 10px;
+	color: black;
+	border: 2px solid black;
+	transition: 0.3s;
+}
+aside .side_menu .side_link:hover{
+	color: green;
+	transition: 0.3s;
+} 
+
+.tableclass {
+    padding: 2em 4%;
+}
+.tableclass h2 {
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 30px;
+    margin-top: 20px;
+}
+.tableclass h2 span{
+	font-size: 30px;
+}
+.tableclass p {
+	margin-top: .7em;
+	font-weight: 600;
+}
+.tableclass a {
+	font-weight: bold;
+	color: orange;
+    text-decoration: none;
+}
+.tableclass h3{
+	font-size: 22px;
+	font-weight: 700;
+	margin-top: 15px;
+}
+.tableclass a{
+	display: block;
+	text-decoration: underline;
+}
+.tableclass img{
+	display: block;
+	margin: 10px 0px;
+}
+.tableclass a:link, main a:visited { 
+    color: orange; 
+}
+.tableclass a:hover, main a:focus { 
+    color: green;
+}
+.tableclass p .bold_p{
+	font-weight: 700;
+	font-size: 18px;
+}
+
+
+footer { 
+	border-top: 2px solid black;
+	padding: .9375em 1.875% .9375em 1.875%;
+    background-image: -webkit-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -moz-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -o-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
+
+
+
+.productlist{
+	width: 60%;
+}
+.productlist h3{
+	font-size: 25px;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+.text-right{
+	text-align: right;
+}
+.table_header{
+	color: #939393;
+	padding-bottom: 20px;
+}
+table td{
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: 3px 0px;
+	flex: 3;
+}
+.tableclass a:link,
+.tableclass table td a{
+	color: black;
+	font-weight: 500;
+}
+.tableclass table td a:hover{
+	color: green;
+	transition: 0.3s;
+}
+.tableclass table tr{
+	display: flex;
+}
+.tableclass table tr .table_list{
+	flex: 2;
+}
+.table_background{
+	background: #F5DEB3 ;
+	flex: 1;
+	text-align: right;
+    padding-right: 5px;
+}
+@media only screen and (max-width: 991px){
+	.container{
+		max-width: 100%;
+	}
+	.dropdown-menu{
+		display: inline;
+	}
+	aside .side_menu{
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	html {
+		background-image: none;
+	}
+	body {
+		font-size: 90%;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	header h2 {
+		font-size: 200%;
+	}
+	aside .side_menu .side_link{
+		text-align: center;
+	}
+
+}
+@media only screen and (max-width: 576px){
+	#nav-list {
+		display: block;
+	}    
+  
+	
+	aside {
+	    margin: 0;
+	    padding: 0;
+	}
+      
+}
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+	section h1 {
+		font-size: 130%;
+	}
+	header img {
+	    float: unset;
+	    width: 20%;
+	}
+	
+}
