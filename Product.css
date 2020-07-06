@@ -2,7 +2,7 @@ html {
 	background-image: url("images/bats.gif");	
 }
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 	max-width: 960px;
 	width: 95%;                        
 	background-color: white;
